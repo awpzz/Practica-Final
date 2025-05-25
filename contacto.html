@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Spain - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+    <div class="container-header">
+        <div class="logo">
+            <img src="images/valorant_logo.png" alt="Valorant Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agentes.html" class="active">Agentes</a></li> <!-- o sin "active" en contacto -->
+                <li><a href="contacto.html" class="active">Contacto</a></li> <!-- solo en contacto.html -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <section class="page-header">
+            <h1>Contacto</h1>
+            <p>¿Tienes dudas sobre Valorant? Escríbenos</p>
+        </section>
+
+        <section class="contacto-contenido">
+            <div class="contacto-info">
+                <h3>Información de Contacto</h3>
+                <div class="info-item">
+                    <h4>Email</h4>
+                    <p>valorant.spain@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <h4>Discord</h4>
+                    <p>ValorantSpain#1234</p>
+                </div>
+                <div class="info-item">
+                    <h4>Horario</h4>
+                    <p>Lunes a Viernes: 10:00 - 18:00</p>
+                </div>
+            </div>
+
+            <div class="formulario-contacto">
+                <h3>Envíanos un Mensaje</h3>
+                <form>
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto">
+                            <option value="">Selecciona un tema</option>
+                            <option value="gameplay">Ayuda con Gameplay</option>
+                            <option value="agentes">Consulta sobre Agentes</option>
+                            <option value="tecnico">Problema Técnico</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="redes-sociales">
+            <h3>Síguenos</h3>
+            <div class="redes">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Twitch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Valorant Spain</p>
+    </footer>
+</body>
+</html>
